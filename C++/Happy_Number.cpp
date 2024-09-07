@@ -19,7 +19,7 @@ public:
         {
             set<int> visited;
             int start=n;
-            while(visited.find(start)==visited.end())
+            while(visited.find(start)==visited.end())//Cycle Detection(think about the Floyd's cycle detection algorithm)
             {
                 visited.insert(start);
                 start=sumsquared(start);
